@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --font-size-paragraph: 15px;
+  --fontweight-light: 200;
+  --fontweight-regular: 400;
+  --fontweight-bold: 600;
+
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --neutral-darkgrey: hsl(234, 12%, 34%);
+  --neutral-grey: hsl(212, 6%, 44%);
+}
+
+/* reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-size: var(--font-size-paragraph);
+  font-family: var(--font-primary);
+  font-weight: var(--fontweight-regular);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* header */
+header {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+h1 {
+  font-weight: var(--fontweight-light);
+  color: var(--neutral-grey);
+  font-size: 1.5em;
+}
+
+h2 {
+  font-weight: var(--fontweight-bold);
+  color: var(--neutral-darkgrey);
+  font-size: 1.5em;
+}
+
+header p {
+  margin: 1rem 2rem;
+  color: var(--neutral-darkgrey);
+}
+
+/* cards */
+.card-gallery {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 1px 12px 33px -9px rgba(46, 106, 179, 0.61);
+  -webkit-box-shadow: 1px 12px 33px -9px rgba(46, 106, 179, 0.61);
+  -moz-box-shadow: 1px 12px 33px -9px rgba(46, 106, 179, 0.61);
+  padding: 2rem;
+  margin: 1rem;
+  height: 16rem;
+  border-radius: 8px;
+}
+
+.supervisor-card {
+  border-top: 5px solid var(--primary-cyan);
+}
+
+.builder-card {
+  border-top: 5px solid var(--primary-red);
+}
+
+.karma-card {
+  border-top: 5px solid var(--primary-orange);
+}
+
+.calc-card {
+  border-top: 5px solid var(--primary-blue);
+}
+
+h3 {
+  color: var(--neutral-darkgrey);
+  font-weight: var(--fontweight-bold);
+}
+
+.card p {
+  color: var(--neutral-grey);
+  font-weight: var(--fontweight-regular);
+  font-size: 0.85rem;
+  padding-top: 0.5rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2.5rem;
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 0.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .card {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4em auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 350px;
+  }
+
+  .supervisor-card {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .builder-card {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .karma-card {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .calc-card {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+}
