@@ -1,4 +1,4 @@
-# Frontend Mentor - 4 Card Feature Section
+# Frontend Mentor - 4 Card Feature
 
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -21,7 +21,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/miriahmoose/ProductPreviewCard)
+- Solution URL: [GitHub](https://github.com/miriahmoose/FourCardFeature)
 - Live Site URL: [GitHub Pages](https://miriahmoose.github.io/ProductPreviewCard/)
 
 ## My process
